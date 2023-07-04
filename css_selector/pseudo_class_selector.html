@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 2%;
+            overflow-x: hidden;
+            background-color: lightgoldenrodyellow;
+        
+        }
+        .frm
+        {
+            width: 80%;
+            height:auto ;
+            margin: auto;
+
+        }
+        fieldset
+        {
+            border:double 2px black;
+            
+        }
+        form
+        {
+           
+            background: url(../css_selector/image/backing.gif) no-repeat;
+           background-size: cover;
+           font-size: 25px;
+        }
+        input,textarea,
+        {
+            width: 250px;
+            height: auto;
+            font-size: 25px;
+            
+        }
+        input[type="text"],input[type="email"],input[type="number"],textarea
+        
+        
+        {
+            width: 70%;
+            height: auto;
+            padding: 5px;
+        }
+        input[type="submit"]
+        
+        
+        {
+            width: 30%;
+            height: auto;
+            padding: 3px;
+            background-color: cadetblue;
+            
+        }
+
+        input[type="reset"]
+        
+        
+        {
+            width: 30%;
+            height: auto;
+            padding: 5px;
+            background-color: cadetblue;
+            
+        }
+         .navbar
+        {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            background-color: black;
+            
+            font-size: 25px;
+
+        }
+        .navbar ul li
+        {
+            display: inline-block;/*inline one line*/
+            padding: 25px;
+        }
+        .navbar a
+        {
+            color:white;
+            text-decoration: underline;
+            list-style-type: none;
+
+        }
+        /*pseudo class seletor*/
+
+        .navbar a:hover       
+        {
+           color: red;
+           text-decoration: underline;
+        }
+        .navbar a:visited
+        {
+           color: white;
+           text-decoration:underline;
+        }
+        .navbar a:active
+        {
+          color: green;
+          text-decoration: none;
+        }
+
+        .navbar a:link
+        {
+          color: blue;
+          text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="navbar">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">our menu</a></li>
+                <li> <a href="#">our gallary</a></li>
+                <li> <a href="#">potfoliyo</a></li>
+                <li> <a href="#">feedback</a></li>
+                <li> <a href="#">account</a></li>
+            </ul>
+        </div>
+
+    <div class="frm">
+        <form method="post">
+           <fieldset>
+            <legend align="center">Counact Us</legend>
+            <label> name *</label><input type="text"name="Name" placeholder=" Enter Your Name *"required>
+            <br><br>
+            <label> Email*</label> <input type="email"name="email" placeholder="Enter your Email *"required>
+            <br><br>
+            <label> number*</label><input type="number"name="phone number" placeholder=" Enter Your Phone Number*"required>
+            <br><br>
+            <label> address*</label><textarea type="text"name="addres" placeholder="Enter Your addres  *"required></textarea>
+            <br><br>
+            <input type="submit" name="contact" value="send">
+            <input type="reset" name="contact" value="reset">
+           
+           </fieldset> 
+        </form>
+
+    </div>
+</body>
+</html>
